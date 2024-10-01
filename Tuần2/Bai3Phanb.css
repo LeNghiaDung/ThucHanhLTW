@@ -1,0 +1,143 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: rgb(251, 81, 19);
+  }
+  
+  h1 a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    padding: 10px 10px;
+  }
+  
+  .Column.left {
+    grid-column: 1/4;
+  }
+  
+  .column.middle {
+    grid-column: 4/10;
+    width: 100%;
+  }
+  
+  h3.title {
+    font-weight: bold;
+    color: rgb(251, 81, 19)
+  }
+  
+  .column.right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column: 10/13;
+    margin: 10px;
+  }
+  
+  ul {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  li {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: auto;
+    color: white;
+    background-color: rgb(30, 140, 243);
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: rgba(30, 140, 243, 0.528);
+    cursor: pointer;
+  }
+  
+  .title {
+    padding: 10px;
+    font-size: 26px;
+  }
+  
+  .content h3 a {
+    text-decoration: none;
+    color: rgb(30, 140, 243);
+  }
+  
+  .content h3 {
+    margin-bottom: 18px;
+  }
+  
+  .content h3 a:hover {
+    color: rgb(251, 81, 19);
+  }
+  
+  .content {
+    width: 98%;
+    padding: 10px;
+    float: left;
+    margin-bottom: 26px;
+  }
+  
+  .chitiet {
+    text-align: right;
+  }
+  
+  .chitiet a {
+    text-decoration: none;
+    color: rgb(251, 81, 19);
+  }
+  
+  .chitiet a:hover {
+    color: rgb(30, 140, 243);
+  }
+  
+  img {
+    width: 90%;
+    border: 18px solid rgb(30, 140, 243);
+  }
+  
+  .footer p {
+    background-color: rgb(30, 140, 243);
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .column.middle h3.title {
+      font-size: 18px;
+    }
+  
+    .content h3,
+    .content p {
+      font-size: 15px;
+    }
+  
+    .chitiet {
+      margin-right: 10px;
+    }
+  
+    img {
+      width: 90%;
+      border: 10px solid rgb(30, 140, 243);
+    }
+  }

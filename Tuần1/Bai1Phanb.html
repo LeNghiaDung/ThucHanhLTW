@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bài 1 Phần b</title>
+        <style>
+            .container {
+                padding: 10px;
+                width: 500px;
+                margin: 20px auto;
+                
+            }
+            .header{
+                font-weight: bold;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .skills {
+                display: flex;
+                justify-content: space-between;
+            }
+            .skills ul li{
+                margin-bottom: 5px;
+            }
+            .skills ul{
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .form-group {
+                margin-bottom: 10px;
+            }
+            .image-container img {
+                width: 218px;
+                height: 132px;
+                margin-left: 28px;
+            }
+            .mainContent{
+                display: flex;
+            }
+            
+            .btnReset{
+                justify-content: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="margin: 20px;">
+            <h1 style="text-align: center; font-size: 30px;">KHẢO SÁT Ý KIẾN</h1>
+            <h2 style="text-align: center; font-size: 20px;">V/V: Các kĩ năng cần có đối với sinh viên để thành công trong công việc</h2>
+        </div>
+        <strong>
+            Theo bạn kỹ năng nào là cần thiết nhất đối với bạn trong số các kỹ năng sau:<br></br>
+        </strong>
+        <div style="width: 525px; margin: auto;">
+        <div class="container">
+            <fieldset>
+                <legend>Kỹ năng mềm cần có</legend>
+            <div class="header">
+            </div>
+                <div class="skills">
+                    <ul>
+                        <li><input type="checkbox" name="skill1" value="muctieu"> Kỹ năng đặt mục tiêu</li>
+                        <li><input type="checkbox" name="skill2" value="sangtao"> Sáng tạo trong công việc</li>
+                        <li><input type="checkbox" name="skill3" value="langnghe"> Biết lắng nghe và học tập những lời phê bình</li>
+                        <li><input type="checkbox" name="skill4" value="giaotiep"> Giao tiếp hiệu quả</li>
+                        <li><input type="checkbox" name="skill5" value="tutin"> Tự tin, năng động và biết lôi kéo người khác</li>
+                    </ul>
+                    <ul>
+                        <li><input type="checkbox" name="skill6" value="dongdoi"> Kỹ năng làm việc đồng đội</li>  
+                        <li><input type="checkbox" name="skill7" value="lanhdao"> Kỹ năng khám phá và lãnh đạo bản thân</li>
+                        <li><input type="checkbox" name="skill8" value="tochuccv"> Kỹ năng tổ chức công việc và quản lý thời gian</li>
+                        <li><input type="checkbox" name="skill9" value="quyetdinh"> Kỹ năng ra quyết định</li>
+                        <li><input type="checkbox" name="skill10" value="vande"> Kỹ năng giải quyết vấn đề</li>
+                    </ul>
+                </div>
+                <div class="opinion">
+                Ý kiến khác:
+                <label><textarea style="width: 400px;"></textarea></label>
+                </div>
+            </fieldset>
+    </div>
+        <div class="container">
+            <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                <div class="header">
+                </div>
+                <div class="mainContent">
+                    <div class="contentItem">
+                        <div class="form-group">
+                            <label for="name">Họ và tên:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="dotuoi">Độ tuổi:</label>
+                            <select id="tuoi" name="tuoi">
+                                <option value="18-25">18-25</option>
+                                <option value="26-35">26-35</option>
+                                <option value="36-45">36-45</option>
+                                <option value="46-55">46-55</option>
+                                <option value="56+">56+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="GT">Giới tính:</label>
+                            <span> 
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Nam</label>
+                            </span>
+                            <span>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Nữ</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="/image/success.png"> 
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+            <div style="width: 97%; display: flex; justify-content: end; margin-top: -15px;">
+                <div>
+                    <button type="submit" >Gửi khảo sát</button>
+                    <button type="again">Làm lại</button>
+                </div>
+        </div>
+    </div>
+    </body>
+</html>

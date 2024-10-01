@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <script>
+        function thucHien(){
+            chuoi = document.getElementById("chuoi").value;
+            if (chuoi.trim() === "") {
+            document.getElementById("error").innerText = "Yêu cầu nhập nội dung";
+            return;
+            }
+            document.getElementById("error").innerText = "";
+            mang = chuoi.split(",");
+            chuoigan = "";
+            for(i = 0; i < mang.length; i++){
+            chuoigan += "<option value='" + mang[i] + "'>" + mang[i] + "</option>";
+            }
+            document.getElementById("ds").innerHTML = chuoigan;
+        }
+
+        function huy(){
+            document.getElementById("chuoi").value = "";
+            document.getElementById("ds").innerHTML = "";
+            document.getElementById("error").innerText = "";
+        }
+
+        function hienThiThongBao() {
+        select = document.getElementById("ds");
+        selectedValue = select.options[select.selectedIndex].value;
+        document.getElementById("thongbao").innerText = "Bạn đã chọn: " + selectedValue;
+        }
+
+    </script>
+</head>
+<body>
+    <div style="width: 300px; height: 120px; border: 2px solid black;" >
+        Chuỗi: <input type="text" id="chuoi" name="chuoi" style="margin: 5px;"><br>
+        Danh sách: <select id="ds" name="ds" style="margin: 5px;" onchange="hienThiThongBao()"></select>
+        <div id="thongbao"></div>
+        <div id="THvaHuy" style="margin: 10px; text-align: right;">
+            <button type="button" onclick="thucHien()">Thực hiện</button>
+            <button type="button" onclick="huy()">Hủy</button>
+        </div>
+        <div id="error" style="color: red; margin-top: 10px;"></div>
+    </div>
+</body>
+</html>

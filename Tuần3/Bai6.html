@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+    <script>
+        function Xem(){
+            ns = document.getElementById("ns").value;
+            if (ns.trim() === "") {
+            document.getElementById("error").innerText = "Yêu cầu nhập Ngày sinh";
+            return;
+            }
+            ns = ns.split("/");
+            date = new Date(ns[2]+"/"+ns[1]+"/"+ns[0]);
+            day = date.getDate();
+            month = date.getMonth() + 1;
+            cunghd = "";
+            if ((day >= 20 && month == 1) || (day <= 18 && month == 2)) {
+                cunghd = "Bảo Bình";
+            } else if ((day >= 19 && month == 2) || (day <= 20 && month == 3)) {
+                cunghd = "Song Ngư";
+            } else if ((day >= 21 && month == 3) || (day <= 19 && month == 4)) {
+                cunghd = "Bạch Dương";
+            } else if ((day >= 20 && month == 4) || (day <= 20 && month == 5)) {
+                cunghd = "Kim Ngưu";
+            } else if ((day >= 21 && month == 5) || (day <= 20 && month == 6)) {
+                cunghd = "Song Tử";
+            } else if ((day >= 21 && month == 6) || (day <= 22 && month == 7)) {
+                cunghd = "Cự Giải";
+            } else if ((day >= 23 && month == 7) || (day <= 22 && month == 8)) {
+                cunghd = "Sư Tử";
+            } else if ((day >= 23 && month == 8) || (day <= 22 && month == 9 )) {
+                cunghd = "Xử Nữ";
+            } else if ((day >= 23 && month == 9) || (day <= 22 && month == 10 )) {
+                cunghd = "Thiên Bình";
+            } else if ((day >= 23 && month == 10) || (day <= 21 && month == 11)) {
+                cunghd = "Bọ Cạp";
+            } else if ((day >= 22 && month == 11) || (day <= 21 && month == 12)) {
+                cunghd = "Nhân Mã";
+            } else if ((day >= 22 && month == 12) || (day <= 19 && month == 1)) {
+                cunghd = "Ma Kết";
+            } else {
+                document.getElementById("error").innerText = "Ngày sinh không hợp lệ";
+                return;
+            }
+
+            document.getElementById("cung").value = cunghd;
+            document.getElementById("error").innerText = "";
+        }
+        function Xoa(){
+            document.getElementById("ns").value = "";
+            document.getElementById("cung").value = "";
+            document.getElementById("error").innerText = "";
+        }
+
+    </script>
+</head>
+<body>
+    <div style="width: 260px; height: 120px; border: 2px solid black;" >
+        Ngày sinh: <input type="text" id="ns" name="ns" style="margin: 5px;"><br>
+        Cung: <input type="text" id="cung" name="cung" style="margin: 5px;"><br>
+        <div id="XemvaXoa" style="margin: 30px; text-align: right;">
+            <button type="button" onclick="Xem()">Xem</button>
+            <button type="button" onclick="Xoa()">Xóa</button>
+        </div>
+        <div id="error" style="color: red; margin-top: 30px;"></div>
+    </div>
+</body>
+</html>

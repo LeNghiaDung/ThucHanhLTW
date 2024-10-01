@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  fieldset {
+    padding: 10px 10px;
+  }
+  
+  fieldset * {
+    margin: 4px;
+  }
+  
+  select {
+    width: 100px;
+  }
+  
+  input {
+    padding-left: 4px;
+  }
+  
+  section {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .lblHang,
+  .txtHang,
+  .save,
+  .add.inactive {
+    display: none;
+  }
+  
+  .lblHang.active,
+  .txtHang.active,
+  .save.active {
+    display: inline-block;
+  }
+  
+  
+  button {
+    padding: 4px;
+    margin: 4px;}
