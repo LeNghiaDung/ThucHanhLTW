@@ -28,7 +28,7 @@ txtNgayramat.addEventListener("change", function () {
         btnAdd.disabled = true;
     }
 
-    if(Number(datePicked[0]) > year){
+    if(Number(datePicked[0]) > year){ 
         alert("Ngày ra mắt không được lớn hơn ngày hiện tại");
         txtNgayramat.value = "";
         txtNgayramat.focus();
