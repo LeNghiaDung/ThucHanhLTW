@@ -1,19 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
-namespace Tuần5.Bai11
+﻿namespace Tuần5.Bai11
 {
+    using System;
+
+    /// <summary>
+    /// Defines the <see cref="Xuly" />
+    /// </summary>
     public partial class Xuly : System.Web.UI.Page
     {
+        /// <summary>
+        /// Defines the inputMaNV
+        /// </summary>
         private string inputMaNV;
+
+        /// <summary>
+        /// Defines the inputTenNV
+        /// </summary>
         private string inputTenNV;
+
+        /// <summary>
+        /// Defines the inputNamSinh
+        /// </summary>
         private int inputNamSinh;
+
+        /// <summary>
+        /// Defines the inputGioitinh
+        /// </summary>
         private string inputGioitinh;
+
+        /// <summary>
+        /// Defines the inputDiaChi
+        /// </summary>
         private string inputDiaChi;
+
+        /// <summary>
+        /// The Page_Load
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/></param>
+        /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -43,6 +66,10 @@ namespace Tuần5.Bai11
             }
         }
 
+        /// <summary>
+        /// The renderNhanVien
+        /// </summary>
+        /// <returns>The <see cref="string"/></returns>
         private string renderNhanVien()
         {
             string res = "";
@@ -77,4 +104,3 @@ namespace Tuần5.Bai11
         }
     }
 }
-

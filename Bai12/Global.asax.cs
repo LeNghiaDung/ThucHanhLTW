@@ -1,4 +1,4 @@
-﻿namespace Tuần5.Bai11
+﻿namespace Tuần5.Bai12
 {
     using System;
 
@@ -23,9 +23,6 @@
         /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void Session_Start(object sender, EventArgs e)
         {
-            Nhanvien[] nhanviens = new Nhanvien[1];
-            Application["danhsach"] = nhanviens;
-            Session["renderNhanVien"] = "";
         }
 
         /// <summary>

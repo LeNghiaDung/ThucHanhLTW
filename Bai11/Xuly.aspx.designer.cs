@@ -9,18 +9,14 @@
 
 namespace Tuần5.Bai11
 {
-
-
+    /// <summary>
+    /// Defines the <see cref="Xuly" />
+    /// </summary>
     public partial class Xuly
     {
-
         /// <summary>
-        /// form1 control.
+        /// form1 control
         /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }
