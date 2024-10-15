@@ -7,20 +7,12 @@
     /// </summary>
     public class Global : System.Web.HttpApplication
     {
-        /// <summary>
-        /// The Application_Start
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="EventArgs"/></param>
+        
         protected void Application_Start(object sender, EventArgs e)
         {
         }
 
-        /// <summary>
-        /// The Session_Start
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="EventArgs"/></param>
+        
         protected void Session_Start(object sender, EventArgs e)
         {
             Nhanvien[] nhanviens = new Nhanvien[1];
@@ -28,11 +20,7 @@
             Session["renderNhanVien"] = "";
         }
 
-        /// <summary>
-        /// The Application_BeginRequest
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="EventArgs"/></param>
+        
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
         }
