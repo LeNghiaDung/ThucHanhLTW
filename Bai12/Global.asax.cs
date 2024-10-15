@@ -1,6 +1,7 @@
 ﻿namespace Tuần5.Bai12
 {
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Defines the <see cref="Global" />
@@ -14,6 +15,8 @@
         /// <param name="e">The e<see cref="EventArgs"/></param>
         protected void Application_Start(object sender, EventArgs e)
         {
+            List<Member> listMembers = new List<Member>();
+            Application["listMembers"] = listMembers;
         }
 
         /// <summary>

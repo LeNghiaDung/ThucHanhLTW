@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Message Sender</h1>
+    <form method="post" action="SendMsg.aspx">
+        <input type="text" name="txtMessage" id="txtMessage" placeholder="Nhập tin nhắn:" />
+        <br />
+        <input type="submit" name="btnSend" id="btnSend" value="GỬI" />
+    </form>
+    <script>
+        const txtMessage = document.querySelector('#txtMessage');
+        const btnSend = document.querySelector('#btnSend');
+
+        btnSend.addEventListener('click', function () {
+            if (txtMessage.value === '') {
+                alert('Vui lòng nhập tin nhắn!');
+                txtMessage.focus();
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

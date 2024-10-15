@@ -5,43 +5,29 @@
     /// </summary>
     public class Member
     {
-        /// <summary>
-        /// Defines the NickName
-        /// </summary>
+        public int Id;
         private string NickName;
-
-        /// <summary>
-        /// Defines the color
-        /// </summary>
         private string color;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Member"/> class.
-        /// </summary>
-        /// <param name="nickName">The nickName<see cref="string"/></param>
-        /// <param name="color">The color<see cref="string"/></param>
-        public Member(string nickName, string color)
+        public Member(int Id,string nickName, string colorInput)
         {
+            this.Id = Id;
             this.NickName = nickName;
-            this.Color = color;
+            this.color = colorInput;
         }
-
-        /// <summary>
-        /// Gets or sets the Nickname
-        /// </summary>
+        public int ID
+        {
+            get { return this.Id; }
+            set { this.Id = value; }
+        }
         public string Nickname
         {
             get { return this.NickName; }
             set { this.NickName = value; }
         }
-
-        /// <summary>
-        /// Gets or sets the Color
-        /// </summary>
         public string Color
         {
-            get { return this.Color; }
-            set { this.Color = value; }
+            get { return this.color; }
+            set { this.color = value; }
         }
     }
 }
