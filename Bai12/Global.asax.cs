@@ -17,6 +17,9 @@
         {
             List<Member> listMembers = new List<Member>();
             Application["listMembers"] = listMembers;
+
+            List<Msg> listMessages = new List<Msg>();
+            Application["listMessages"] = listMessages;
         }
 
         /// <summary>

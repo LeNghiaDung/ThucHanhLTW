@@ -133,6 +133,7 @@
     <Compile Include="Bai12\MessageList.aspx.designer.cs">
       <DependentUpon>MessageList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bai12\Msg.cs" />
     <Compile Include="Bai12\SendMsg.aspx.cs">
       <DependentUpon>SendMsg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

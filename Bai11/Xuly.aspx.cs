@@ -92,8 +92,8 @@
                     res += "<th>" + dsNhanVien[i].MaNV + "</th>";
                     res += "<th>" + dsNhanVien[i].HoTen + "</th>";
                     res += "<th>" + dsNhanVien[i].NamSinh + "</th>";
-                    res += "<th>" + dsNhanVien[i].GioiTinh + "</th>";
                     res += "<th>" + dsNhanVien[i].DiaChi + "</th>";
+                    res += "<th>" + dsNhanVien[i].GioiTinh + "</th>";
                     res += "</tr>";
                 }
 

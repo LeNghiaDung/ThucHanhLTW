@@ -17,7 +17,9 @@ namespace Tuần5.Bai12
             {
                 if (listMember[i] != null)
                 {
-                    res += "<h2 style ='color:" + listMember[i].Color + "; height: 50px; display: flex; align-items: center; padding-left: 18px; border-radius: 11px'>" + 
+                    res += "<h2 style ='color:" + 
+                        listMember[i].Color + 
+                        "; height: 50px; display: flex; align-items: center; padding-left: 18px; border-radius: 11px'>" + 
                         listMember[i].ID + 
                         "_" + 
                         listMember[i].Nickname + 
